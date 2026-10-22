@@ -1,0 +1,41 @@
+generated: '2026-10-21'
+method: searched
+source: https://capmetals.com.au/privacy-policy/
+signals:
+  data_subject_request:
+    url: https://capmetals.com.au/privacy-policy/
+    section: Privacy Policy
+    rights_named: [access, deletion]
+    evidence:
+    - source: https://capmetals.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "4. Your personal information held by us is available to you at your request, and may be deleted at any time at your request."
+    note: >-
+      The policy states access and deletion on request, but names no channel, response time or
+      escalation route. It cites the National Privacy Principles under the Privacy Amendment (Private
+      Sector) Act 2000 (amending the Privacy Act 1988). Those principles have been replaced by the
+      Australian Privacy Principles, so the policy text appears to be out of date.
+  data_retention:
+    url: https://capmetals.com.au/privacy-policy/
+    section: Privacy Policy
+    evidence:
+    - source: https://capmetals.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "3. Your personal information is protected from misuse and unauthorised access or disclosure. Your personal information is deleted when it is no longer required for its original purpose."
+    note: >-
+      The policy limits retention by purpose: data is deleted once its original purpose is served. It
+      states no fixed retention period.
+  subprocessors:
+    url: https://capmetals.com.au/privacy-policy/
+    section: Privacy Policy
+    evidence:
+    - source: https://capmetals.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "2. Your personal information is not used for any other purpose and is not disclosed to any other entity."
+    note: >-
+      This is a denial. The policy says personal information is not disclosed to any other entity, and it
+      publishes no subprocessor list. The scope is the contact information collected through the
+      corporate website (point 1: "provided voluntarily for the purpose of contacting you").

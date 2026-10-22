@@ -1,0 +1,5 @@
+name: Capricorn Metals packages
+generated: '2026-10-21'
+method: none
+note: Checked, nothing found. Capricorn Metals (ASX:CMM) is a gold producer with no public API, developer portal or SDK. The registries were checked directly and returned 404 for registry.npmjs.org/capricorn-metals, registry.npmjs.org/capmetals and pypi.org/pypi/capricorn-metals/json. The homepage https://capmetals.com.au/ (200) links to no SDK, API or developer pages.
+packages: []

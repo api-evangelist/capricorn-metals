@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/capricorn-metals/integrations
+- https://n8n.io/integrations/capricorn-metals/
+- https://composio.dev/toolkits/capricorn-metals
+- https://monid.ai/tools/capricorn-metals
+checked:
+- https://capmetals.com.au/ (200, no integrations/partners/API links)
+- https://zapier.com/apps/capricorn-metals/integrations (404)
+- https://www.make.com/en/integrations/capricorn-metals (403, unreadable)
+- https://n8n.io/integrations/capricorn-metals/ (404)
+- https://composio.dev/toolkits/capricorn-metals
+- https://monid.ai/tools/capricorn-metals
+- https://n8n.io/integrations/capricorn-metals/
+- https://zapier.com/apps/capricorn-metals/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Checked, no integrations found. This is a gold mining company with no API product, no integrations page and
+  no marketplace listings.

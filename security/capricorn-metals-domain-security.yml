@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: capmetals.com.au
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 24 06:29:52 2026 GMT
+  hsts: false
+domains:
+- domain: capmetals.com.au
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: none

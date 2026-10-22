@@ -1,23 +1,80 @@
 aid: capricorn-metals
+
 name: Capricorn Metals
-description: 'Capricorn Metals is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Capricorn Metals Ltd (ASX: CMM) is an Australian gold producer headquartered in Perth, Western Australia. It operates two project areas in Western Australia: the Karlawinda Gold Project, 65 km south-east of Newman in the Pilbara and in production since June 2021, and the Mt Gibson Gold Project, with a combined stated resource base of 6.6 million ounces and reserves of 4.0 million ounces. The company publishes no public API, developer portal or developer documentation; its website (capmetals.com.au) covers corporate, investor, sustainability and project information.'
+
 url: https://raw.githubusercontent.com/api-evangelist/capricorn-metals/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Australia
+- ASX Listed
+- Western Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://capmetals.com.au/wp-content/uploads/2026/01/capricorn-metals-logo-light-300x196.webp
+
 common:
+- type: Hosts
+  url: hosts/capricorn-metals-hosts.yml
+- type: DomainSecurity
+  url: security/capricorn-metals-domain-security.yml
 - type: Website
   url: https://capmetals.com.au/
+- type: PrivacyPolicy
+  url: https://capmetals.com.au/privacy-policy/
+- type: Contact
+  url: https://capmetals.com.au/contact/
+- type: Leadership
+  url: https://capmetals.com.au/corporate/leadership/
+- type: Investors
+  url: https://capmetals.com.au/investors/
+- type: Careers
+  url: https://capmetals.com.au/careers/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: no-public-api
+  detail: 'Identity verified from the company site (title "Home | Capricorn Metals", text "Capricorn Metals Ltd (ASX: CMM)"). No API, developer portal or documentation links found on the homepage or sitemap.'
+  evidence:
+  - url: https://capmetals.com.au/
+    status: 200
+  - url: https://capmetals.com.au/privacy-policy/
+    status: 200
+  - url: https://capmetals.com.au/contact/
+    status: 200
+  - url: https://capmetals.com.au/investors/
+    status: 200
+  - url: https://capmetals.com.au/careers/
+    status: 200
+  - url: https://capmetals.com.au/corporate/leadership/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
